@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.3 on win32)" generated="20230126 23:27:06.862" rpa="false" schemaversion="3">
+<suite id="s1" name="Ecommerce" source="D:\Documentos\audora\ecommerce.robot">
+<kw name="Abrir o navegador" library="ecommerce_source" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230126 23:27:07.507" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230126 23:27:07.507" endtime="20230126 23:27:08.626"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230126 23:27:08.626" endtime="20230126 23:27:08.753"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:07.507" endtime="20230126 23:27:08.753"/>
+</kw>
+<test id="s1-t1" name="Cenário: Acessar a Home Page do “e-commerce”" line="9">
+<kw name="Dado que o usuário está no navegador" library="BDD-ptbr" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Que o usuário está no navegador">
+<kw name="Abrir o navegador" library="ecommerce_source">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230126 23:27:08.753" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230126 23:27:08.753" endtime="20230126 23:27:09.855"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230126 23:27:09.855" endtime="20230126 23:27:09.972"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:08.753" endtime="20230126 23:27:09.972"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:08.753" endtime="20230126 23:27:09.972"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:08.753" endtime="20230126 23:27:09.972"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:08.753" endtime="20230126 23:27:09.972"/>
+</kw>
+<kw name="Quando o usuário inserir a “url” do e-commerce" library="BDD-ptbr" sourcename="Quando ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="O usuário inserir a “url” do e-commerce">
+<kw name="Inserir a ${URL}" library="ecommerce_source" sourcename="Inserir a ${URL}">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230126 23:27:09.972" level="INFO">Opening url 'https://www.centauro.com.br'</msg>
+<status status="PASS" starttime="20230126 23:27:09.972" endtime="20230126 23:27:25.241"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:09.972" endtime="20230126 23:27:25.241"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:09.972" endtime="20230126 23:27:25.243"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:09.972" endtime="20230126 23:27:25.243"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:09.972" endtime="20230126 23:27:25.243"/>
+</kw>
+<kw name="Então o usuário será direcionado a home page do e-commerce" library="BDD-ptbr" sourcename="Então ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="O usuário será direcionado a home page do e-commerce">
+<kw name="Verificar o titulo da pagina" library="ecommerce_source">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Centauro Loja de Esportes - Nike, Adidas, Mizuno, Asics, Oakley e mais! - Seu esporte, nossa paixão</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230126 23:27:25.263" level="INFO">Page title is 'Centauro Loja de Esportes - Nike, Adidas, Mizuno, Asics, Oakley e mais! - Seu esporte, nossa paixão'.</msg>
+<status status="PASS" starttime="20230126 23:27:25.245" endtime="20230126 23:27:25.263"/>
+</kw>
+<kw name="Click Button">
+<arg>//button[contains(@id,'adopt-accept-all-button')]</arg>
+<msg timestamp="20230126 23:27:25.263" level="FAIL">Multiple keywords with name 'Click Button' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Click Button
+    SeleniumLibrary.Click Button</msg>
+<status status="FAIL" starttime="20230126 23:27:25.263" endtime="20230126 23:27:25.264"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.244" endtime="20230126 23:27:25.265"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.244" endtime="20230126 23:27:25.266"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.244" endtime="20230126 23:27:25.266"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.243" endtime="20230126 23:27:25.267"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:08.753" endtime="20230126 23:27:25.267">Multiple keywords with name 'Click Button' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Click Button
+    SeleniumLibrary.Click Button</status>
+</test>
+<test id="s1-t2" name="Cenário: Efetuar Cadastro com sucesso no “e-commerce”" line="14">
+<kw name="Dado que o usuário está na pagina de cadastro do “e-commerce”" library="BDD-ptbr" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Que o usuário está na pagina de cadastro do “e-commerce”">
+<kw name="Acessar pagina de cadastro" library="ecommerce_source">
+<kw name="Mouse Up" library="SeleniumLibrary">
+<arg>locator=//a[@data-testid='router-link'][contains(.,'Meus pedidos')]</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20230126 23:27:25.270" level="INFO">Simulating Mouse Up on element '//a[@data-testid='router-link'][contains(.,'Meus pedidos')]'.</msg>
+<status status="PASS" starttime="20230126 23:27:25.270" endtime="20230126 23:27:25.572"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>locator=//a[contains(.,'Entre / Cadastre-se')]</arg>
+<msg timestamp="20230126 23:27:25.573" level="FAIL">Multiple keywords with name 'Wait Until Element Is Visible' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Wait Until Element Is Visible
+    SeleniumLibrary.Wait Until Element Is Visible</msg>
+<status status="FAIL" starttime="20230126 23:27:25.573" endtime="20230126 23:27:25.573"/>
+</kw>
+<kw name="Click Element">
+<arg>locator=//a[@data-testid='router-link'][contains(.,'Entre / Cadastre-se')]</arg>
+<status status="NOT RUN" starttime="20230126 23:27:25.573" endtime="20230126 23:27:25.573"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>locator=//button[contains(.,'Entrar')]</arg>
+<status status="NOT RUN" starttime="20230126 23:27:25.573" endtime="20230126 23:27:25.573"/>
+</kw>
+<kw name="Click Button">
+<arg>locator=//button[contains(.,'Criar uma conta')]</arg>
+<status status="NOT RUN" starttime="20230126 23:27:25.574" endtime="20230126 23:27:25.574"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.269" endtime="20230126 23:27:25.574"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.269" endtime="20230126 23:27:25.575"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.269" endtime="20230126 23:27:25.575"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.269" endtime="20230126 23:27:25.575"/>
+</kw>
+<kw name="Quando o usuário inserir os dados válidos de cadastro" library="BDD-ptbr" sourcename="Quando ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:25.576" endtime="20230126 23:27:25.576"/>
+</kw>
+<kw name="Então será exibida uma mensagem: “usuário cadastrado com sucesso “" library="BDD-ptbr" sourcename="Então ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:25.576" endtime="20230126 23:27:25.576"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.268" endtime="20230126 23:27:25.576">Multiple keywords with name 'Wait Until Element Is Visible' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Wait Until Element Is Visible
+    SeleniumLibrary.Wait Until Element Is Visible</status>
+</test>
+<test id="s1-t3" name="Cenário: Realizar login do usuário com sucesso" line="19">
+<kw name="Dado que o usuário é cadastrado no “e-commerce”" library="BDD-ptbr" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Que o usuário é cadastrado no “e-commerce”">
+<kw name="Abrir o navegador" library="ecommerce_source">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230126 23:27:25.578" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230126 23:27:25.578" endtime="20230126 23:27:26.862"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230126 23:27:26.863" endtime="20230126 23:27:26.978"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:25.578" endtime="20230126 23:27:26.978"/>
+</kw>
+<kw name="Inserir a ${URL}" library="ecommerce_source" sourcename="Inserir a ${URL}">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230126 23:27:26.979" level="INFO">Opening url 'https://www.centauro.com.br'</msg>
+<status status="PASS" starttime="20230126 23:27:26.979" endtime="20230126 23:27:30.482"/>
+</kw>
+<status status="PASS" starttime="20230126 23:27:26.978" endtime="20230126 23:27:30.482"/>
+</kw>
+<kw name="Verificar o titulo da pagina" library="ecommerce_source">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Centauro Loja de Esportes - Nike, Adidas, Mizuno, Asics, Oakley e mais! - Seu esporte, nossa paixão</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230126 23:27:30.515" level="INFO">Page title is 'Centauro Loja de Esportes - Nike, Adidas, Mizuno, Asics, Oakley e mais! - Seu esporte, nossa paixão'.</msg>
+<status status="PASS" starttime="20230126 23:27:30.483" endtime="20230126 23:27:30.515"/>
+</kw>
+<kw name="Click Button">
+<arg>//button[contains(@id,'adopt-accept-all-button')]</arg>
+<msg timestamp="20230126 23:27:30.515" level="FAIL">Multiple keywords with name 'Click Button' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Click Button
+    SeleniumLibrary.Click Button</msg>
+<status status="FAIL" starttime="20230126 23:27:30.515" endtime="20230126 23:27:30.515"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.482" endtime="20230126 23:27:30.516"/>
+</kw>
+<kw name="Acessar pagina de login" library="ecommerce_source">
+<status status="NOT RUN" starttime="20230126 23:27:30.516" endtime="20230126 23:27:30.516"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.578" endtime="20230126 23:27:30.516"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.578" endtime="20230126 23:27:30.516"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.577" endtime="20230126 23:27:30.517"/>
+</kw>
+<kw name="Quando ele preencher os dados válidos" library="BDD-ptbr" sourcename="Quando ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:30.517" endtime="20230126 23:27:30.517"/>
+</kw>
+<kw name="Então ele será logado" library="BDD-ptbr" sourcename="Então ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:30.518" endtime="20230126 23:27:30.518"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:25.577" endtime="20230126 23:27:30.518">Multiple keywords with name 'Click Button' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Click Button
+    SeleniumLibrary.Click Button</status>
+</test>
+<test id="s1-t4" name="Cenário: Incluir produtos ao carrinho com sucesso" line="24">
+<kw name="Dado que o usuário está logado no e-commerce" library="BDD-ptbr" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Que o usuário está logado no e-commerce">
+<msg timestamp="20230126 23:27:30.519" level="FAIL">Keyword with same name defined multiple times.</msg>
+<status status="FAIL" starttime="20230126 23:27:30.519" endtime="20230126 23:27:30.519"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.519" endtime="20230126 23:27:30.519"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.519" endtime="20230126 23:27:30.519"/>
+</kw>
+<kw name="Quando o usuário busca um produto" library="BDD-ptbr" sourcename="Quando ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:30.520" endtime="20230126 23:27:30.520"/>
+</kw>
+<kw name="E adiciona ao carrinho" library="BDD-ptbr" sourcename="E ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:30.520" endtime="20230126 23:27:30.520"/>
+</kw>
+<kw name="Então o produto será adicionado ao carrinho" library="BDD-ptbr" sourcename="Então ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:30.523" endtime="20230126 23:27:30.523"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.518" endtime="20230126 23:27:30.524">Keyword with same name defined multiple times.</status>
+</test>
+<test id="s1-t5" name="Cenário: Remover produtos do carrinho com sucesso" line="31">
+<kw name="Dado que o usuário tem produto no carrinho de compras" library="BDD-ptbr" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Que o usuário tem produto no carrinho de compras">
+<kw name="Verificar se tem produto no carrinho" library="ecommerce_source">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class='_1kcsd3f'][contains(.,'remover')]</arg>
+<arg>remover</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<msg timestamp="20230126 23:27:35.827" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230126 23:27:35.827" level="FAIL">Element with locator '//span[@class='_1kcsd3f'][contains(.,'remover')]' not found.</msg>
+<status status="FAIL" starttime="20230126 23:27:30.527" endtime="20230126 23:27:35.910"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.527" endtime="20230126 23:27:35.910"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.525" endtime="20230126 23:27:35.910"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.525" endtime="20230126 23:27:35.910"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.525" endtime="20230126 23:27:35.911"/>
+</kw>
+<kw name="Quando o usuário excluir um produto do carrinho" library="BDD-ptbr" sourcename="Quando ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:35.911" endtime="20230126 23:27:35.911"/>
+</kw>
+<kw name="Então o produto será removido do carrinho" library="BDD-ptbr" sourcename="Então ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:35.913" endtime="20230126 23:27:35.913"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:30.525" endtime="20230126 23:27:35.913">Element with locator '//span[@class='_1kcsd3f'][contains(.,'remover')]' not found.</status>
+</test>
+<test id="s1-t6" name="Cenário: Realizar logout do e-commerce com sucesso" line="36">
+<kw name="Dado que o usuário está logado no e-commerce" library="BDD-ptbr" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Que o usuário está logado no e-commerce">
+<msg timestamp="20230126 23:27:35.915" level="FAIL">Keyword with same name defined multiple times.</msg>
+<status status="FAIL" starttime="20230126 23:27:35.915" endtime="20230126 23:27:35.915"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:35.915" endtime="20230126 23:27:35.915"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:35.914" endtime="20230126 23:27:35.915"/>
+</kw>
+<kw name="Quando o usuário fizer o logout do e-commerce" library="BDD-ptbr" sourcename="Quando ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:35.915" endtime="20230126 23:27:35.915"/>
+</kw>
+<kw name="Então o usuário devera ser direcionado a home page do e-commerce" library="BDD-ptbr" sourcename="Então ${keyword}">
+<status status="NOT RUN" starttime="20230126 23:27:35.915" endtime="20230126 23:27:35.915"/>
+</kw>
+<status status="FAIL" starttime="20230126 23:27:35.914" endtime="20230126 23:27:35.915">Keyword with same name defined multiple times.</status>
+</test>
+<kw name="Fechar Navegador" library="ecommerce_source" type="TEARDOWN">
+<msg timestamp="20230126 23:27:35.916" level="FAIL">Keyword with same name defined multiple times.</msg>
+<status status="FAIL" starttime="20230126 23:27:35.916" endtime="20230126 23:27:35.916">Keyword with same name defined multiple times.</status>
+</kw>
+<doc>Esta é uma automaçao Acessar a Home Page do “e-commerce” , realizar o cadastro com sucesso, efetuar login, incluir e excluir itens ao carrinho e efetuar o logout do e-commerce com sucesso.</doc>
+<status status="FAIL" starttime="20230126 23:27:06.862" endtime="20230126 23:27:35.916">Suite teardown failed:
+Keyword with same name defined multiple times.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="Ecommerce">Ecommerce</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230126 23:27:06.864" level="ERROR">Error in file 'D:\Documentos\audora\ecommerce.robot' on line 76: Creating keyword 'Que o usuário está logado no e-commerce' failed: Keyword with same name defined multiple times.</msg>
+<msg timestamp="20230126 23:27:06.878" level="ERROR">Error in file 'D:\Documentos\audora\ecommerce_source.robot' on line 102: Creating keyword 'Fechar Navegador' failed: Keyword with same name defined multiple times.</msg>
+</errors>
+</robot>
